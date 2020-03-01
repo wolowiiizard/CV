@@ -1,0 +1,161 @@
+.c-entete {
+  height: 200px;
+  margin-top: 20px;
+}
+.r-entete {
+  align-items: center;
+}
+.r-entete img{
+  width: 200px;
+  height: auto;
+  border-radius: 10px 100px / 120px;
+}
+.col-profil {
+  text-align: center;
+}
+.c-competences {
+  margin-top: 120px;
+}
+.r-competences {
+  text-align: center;
+  height: 400px !important;
+  align-items: center;
+}
+.col-competences img{
+  width: 100%;
+  height: auto;
+}
+.c-exp {
+  margin-top: 60px;
+}
+.r-exp {
+  text-align: center;
+}
+.col-exp img{
+  width: 100%;
+  height: auto;
+}
+.c-forma {
+  margin-top: 60px;
+}
+.r-forma {
+  text-align: center;
+}
+.col-forma img{
+  width: 100%;
+  height: auto;
+}
+.c-perso {
+  margin-top: 80px;
+}
+/***** Start Overlay ******/
+.image, .img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #34a1eb;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/***** Start Carousel *****/
+
+.r-exp-carousel {
+  justify-content: center;
+}
+.r-forma-carousel {
+  justify-content: center;
+}
+.carousel-control-prev {
+  background-color: black;
+}
+.carousel-control-next {
+  background-color: black;
+}
+.carousel-inner {
+  margin-bottom: 60px;
+  justify-content: center;
+}
+.carousel-inner h4{
+  text-align: center;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 8px;
+    height: 5px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    background-color: darkgrey;
+}
+.carousel-indicators .active {
+    width: 15px;
+    height: 10px;
+    background-color: black;
+}
+.carousel-caption {
+  background-color: red;
+  color: black
+  z-index: 22;
+}
+/***** End Carousel *****/
+
+
+/***** Start Gallery *****/
+.gallery-info {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery-info .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery-info .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery-info {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
